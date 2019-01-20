@@ -1,0 +1,49 @@
+{{> header}}
+<div class="menuone">
+   <p>ሓዋላ > add</p>
+</div>
+
+<div class="scroll">
+   <div class="add_hawala">
+       <form method="POST" action="/hawala">
+           <div>
+            <input type="text" name="nameOne" placeholder="ስም ሰዳዲ">
+           </div>
+           <div>
+            <input type="number" name="nameOnePhone" placeholder="ተለፎን ሰዳዲ">
+           </div>
+           <div>
+            <input type="text" name="nameTwo" placeholder="ስም ተቀባሊ">
+           </div>
+           <div>
+            <input type="number" name="nameTwoPhone" placeholder="ተለፎን ተቀባሊ">
+           </div>
+           <div>
+            <input type="text" name="nameTwoAddress" placeholder="ተቀባሊ ኣድራሻ">
+           </div>
+           <div>
+            <input type="number" name="amount" placeholder="ዓቐን ገንዘብ">
+           </div>
+           <div>
+               <input type="number" name="sherfiOne" placeholder="ሸርፊ">
+           </div>
+           <div>
+               <label>ዓይነት ሸርፊ</label>
+               <select name="sherfi">
+                   <option value="ብር">ብር</option>
+                   <option value="ናቕፋ">ናቕፋ</option>
+                   <option value="ጂኔ">ጂኔ</option>
+               </select>
+           </div>
+           <div>
+               <select name="payed">
+                   <option value="ኣይተኸፈለን">ኣይተኸፈለን</option>
+                   <option value="ተኸፊሉ">ተኸፊሉ</option>
+               </select>
+           </div>
+           <div>
+               <button type="submit" class="submit_btn">Add</button>
+           </div>
+        </form>
+   </div> 
+</div>

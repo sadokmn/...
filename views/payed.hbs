@@ -1,0 +1,12 @@
+{{> header}}
+<div class="menuone">
+   <p>ሓዋላ > ዚተኸፍለ</p>
+</div>
+{{> navbar}}
+<div class="scroll">
+    {{#each payed}}
+    <a class="div_linked" href="/id/{{this.id}}">
+        {{> data}}
+    </a>        
+    {{/each}}
+</div>

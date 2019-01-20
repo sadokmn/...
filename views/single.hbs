@@ -1,0 +1,29 @@
+{{> header}}
+<div class="menuone">
+   <p>ሓዋላ > {{doc.nameOne}}</p>
+</div>
+
+<div class="scroll">
+        <div class="singleDoc">
+            <div class="nameOne">ስም ሰዳዲ --- {{doc.nameOne}}</div>
+            <div class="nameOnePhone">ተለፎን ሰዳዲ  --- {{doc.nameOnePhone}}</div>
+            <div class="nameTwo">ስም ተቀባሊ --- {{doc.nameTwo}}</div>
+            <div class="nameTwoPhone">ተለፎን ተቀባሊ --- {{doc.nameTwoPhone}}</div>
+            <div class="nameTwoAddress">ተቀባሊ ኣድራሻ --- {{doc.nameTwoAddress}}</div>
+            <div class="amount">ዓቐን ገንዘብ --- {{doc.currency}}{{doc.amount}}</div>
+            <div class="currency">ሸርፊ --- {{doc.sherfiOne}} {{doc.sherfi}}</div>
+            <div class="payed">{{doc.payed}}</div>
+            <div class="date">ዕለት --- {{doc.date}}</div>
+        </div>
+        <div class="update">
+            <div class="pay">
+                <a href="/payed/{{doc.id}}">ተኸፊሉ</a>
+            </div>
+            <div class="unpayed">
+                <a href="/unpayed/{{doc.id}}">ኣይተኸፈለን</a>
+            </div>
+            <div class="delete">
+                <a href="/delete/{{doc.id}}">ደምስስ</a>
+            </div>
+        </div>
+</div>
